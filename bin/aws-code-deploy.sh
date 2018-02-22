@@ -89,7 +89,7 @@ jsonValue() {
 installAwsCli() {
   if ! typeExists "pip"; then
     h2 "Installing Python PIP"
-    runCommand "sudo apt-get install -y python-pip"
+    runCommand "sudo apt-get install -y python-pip libpython-dev"
     success "Installing PIP (`pip --version`) succeeded"
   fi
 
